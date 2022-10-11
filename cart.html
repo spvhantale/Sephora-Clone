@@ -419,7 +419,7 @@
   document.querySelector("#promobtn").addEventListener("click", function () {
     let x = document.querySelector("#promovalue").value;
     if (x == "masai 30") {
-      discount = subt * 0.3;
+      discount = Math.round(subt * 0.3);
       document.querySelector("#promocode").style.display = "none";
       document.querySelector("#dis").innerText = "-Rs" + discount;
       total(subt, discount);

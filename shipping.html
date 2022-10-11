@@ -362,7 +362,7 @@
       let head1 = document.createElement("h4");
       head1.innerText = elem.name;
       let para = document.createElement("p");
-      para.innerText = elem.use;
+      para.innerText = elem.cat;
       let head2 = document.createElement("h4");
       head2.innerText = elem.price;
 
@@ -416,6 +416,7 @@
     let total = subt - discount;
     let x = document.querySelector(".billsection>div:last-child>h3:last-child");
     x.innerText = "Rs." + total;
+    document.querySelector("#dis").innerText=discount;
     localStorage.setItem("Pay", total);
   }
   function changeprice(cart) {
@@ -446,7 +447,7 @@
     let x = document.querySelector("#promovalue").value;
     if (x == "masai 30") {
       console.log(subt);
-      discount = subt * 0.3;
+      discount =Math.round( subt * 0.3);
       document.querySelector("#promocode").style.display = "none";
       document.querySelector("#dis").innerText = "-Rs" + discount;
       total(subt, discount);

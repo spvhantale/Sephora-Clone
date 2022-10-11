@@ -4,8 +4,8 @@ Sephora is a French multinational retailer of personal care and beauty products.
 
 AS part of unit 2 construct week we cloned the frontend of sephora.com to the best of our ability in a team of 6 within the span of 5 days.
 
-[Original link](https://sephora.nnnow.com/)
-[Deploy link](https://sephora-nnnow-masai.netlify.app/homepage.html)
+[Original link](https://www.sephora.com/)
+[Deploy link](https://mysephoramasai.netlify.app/homepage.html)
 
 
 
@@ -60,3 +60,5 @@ This is a simple project. You can use any server to serve up the html pages. Onc
 5.Payment Confirm
 
 ![image](https://github.com/erGaurav13/Sephore-Clone/blob/main/Sephora/Payment.png)
+
+

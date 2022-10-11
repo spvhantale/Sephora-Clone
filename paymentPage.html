@@ -148,9 +148,9 @@
               <p>Subtotal</p>
               <p id="subtotal">Rs.0</p>
             </div>
-            <div>
+            <div >
               <p>Discount</p>
-              <p>Rs.0</p>
+              <p id="dis">Rs.0</p>
             </div>
             <div>
               <p>GST</p>
@@ -212,5 +212,7 @@
 
   document.querySelector("#total").innerText = "Rs." + payme;
   let subtotal = localStorage.getItem("subPay");
+  let dis=Math.round(payme-subtotal);
+  document.querySelector("#dis").innerText="Rs. "+dis;
   document.querySelector("#subtotal").innerText = "Rs." + subtotal;
 </script>
